@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin:30px;
 }
 
 .App-logo {
@@ -35,4 +36,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.upper_score_card{
+display: flex;
+}
+
+.quick_summary{
+  margin-left:10px;
+  width:25%;
+  border-radius:8px;
+  padding:20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

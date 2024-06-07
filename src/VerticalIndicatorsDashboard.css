@@ -1,0 +1,6 @@
+/* src/VerticalIndicatorsDashboard.css */
+.indicators-dashboard {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

@@ -1,0 +1,7 @@
+.Bifurcation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures four items per row */
+  gap: 20px; /* Adjust the gap as needed */
+  margin:20px;
+  text-align: center;
+}
