@@ -5,23 +5,28 @@
   border-radius: 12px;
   padding: 16px;
   width: 300px;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 
-.bsa-scorecard h3 {
-  margin: 0;
+.bsa-scorecard p {
+  font-size:20px;
   margin-bottom: 16px;
   color: #333;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
 }
 
 .bsa-item {
   margin-bottom: 16px;
 }
+.base-item-label-value-block{
+  display:flex;
+  justify-content: space-between;
+  line-height:2;
+}
 
 .bsa-label {
-  font-weight: bold;
+
   color: #333;
   display: flex;
   justify-content: space-between;

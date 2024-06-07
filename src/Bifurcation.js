@@ -13,10 +13,12 @@ function Bifurcation() {
   ];
   return (
     <div className="Bifurcation">
-        <BSAScorecard title="BSA" data={bsaData} />
-        <BSAScorecard title="BSA" data={bsaData} />
-        <BSAScorecard title="BSA" data={bsaData} />
-        <BSAScorecard title="BSA" data={bsaData} />
+        <BSAScorecard title="Generic" data={bsaData} />
+        <BSAScorecard title="Bureau" data={bsaData} />
+        <BSAScorecard title="Ledger" data={bsaData} />
+        <BSAScorecard title="Portfolio" data={bsaData} />
+        <BSAScorecard title="Gstin" data={bsaData} />
+        <BSAScorecard title="Financial" data={bsaData} />
     </div>
   );
 }
