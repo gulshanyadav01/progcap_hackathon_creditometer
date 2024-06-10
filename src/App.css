@@ -44,9 +44,46 @@ display: flex;
 }
 
 .quick_summary{
-  margin-left:10px;
+  display: flex;
+  flex-direction: column;
   width:25%;
   border-radius:8px;
   padding:20px;
+
+}
+.quick_summary_div{
+  height:auto;
+  overflow:auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* src/ScrollableDiv.css */
+.scrollable-div {
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  padding: 10px;
+  width: 400px; /* Adjust the width as needed */
+  background-color: #fff; /* Optional: Add a background color */
+  margin-bottom: 10px;
+}
+
+.scrollable-div h4 {
+  margin: 0 0 10px 0;
+  color: #4A90E2; /* Adjust the color as needed */
+}
+
+.scrollable-content {
+  max-height: 100px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+.scrollable-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: disc; /* Optional: Add list style */
+}
+
+.scrollable-content li {
+  margin: 5px 0;
+  color: black; /* Adjust the color as needed */
 }

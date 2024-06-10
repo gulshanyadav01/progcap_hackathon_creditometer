@@ -1,0 +1,52 @@
+/* src/DeviationForm.css */
+.deviation-form {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px; /* Adjust the width as needed */
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 400px; /* Adjust the height as needed */
+}
+
+.deviation-form {
+  text-align: left;
+  margin: 0 0 10px 0;
+  color:#5868ED;
+
+}
+
+.category-block {
+
+  margin-bottom: 15px;
+}
+
+.category-block label {
+  display: block;
+  color: #4A90E2;
+  margin-bottom: 5px;
+}
+
+.category-block select,
+.category-block textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.category-block textarea {
+  height: 50px; /* Adjust the height as needed */
+  resize: vertical;
+}
+
+.add-category {
+  display: block;
+  color: #4A90E2;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: underline;
+}

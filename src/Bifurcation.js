@@ -1,6 +1,7 @@
 import React from "react";
 import "./Bifurcation.css"
 import BSAScorecard from "./BSAScorecard";
+import DeviationForm from "./DeviationForm";
 
 function Bifurcation() {
      const bsaData = [
@@ -18,7 +19,7 @@ function Bifurcation() {
         <BSAScorecard title="Ledger" data={bsaData} />
         <BSAScorecard title="Portfolio" data={bsaData} />
         <BSAScorecard title="Gstin" data={bsaData} />
-        <BSAScorecard title="Financial" data={bsaData} />
+        <DeviationForm/>
     </div>
   );
 }

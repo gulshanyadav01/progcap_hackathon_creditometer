@@ -26,30 +26,23 @@ const SuperScoreDashboard = ({ score }) => {
 
   return (
     <div className="super-score-dashboard">
-      <GaugeComponent
-          value={587}
-          type="radial"
-          minValue={0}
-          maxValue={900}
-          labels={{
-            tickLabels: {
-              type: "inner",
-              ticks: [
-
-              ]
-            }
-          }}
-          arc={{
-            colorArray: ['#00FF15', '#FF2121',],
-            subArcs: [{limit: 10}, {limit: 30}, {}, {}, {}],
-            padding: 0.02,
-            width: 0.2
-          }}
-          pointer={{
-            elastic: true,
-            animationDelay: 1
-          }}
-      />
+        <div className="gauge-container">
+        <GaugeChart id="gauge-chart5"
+                    nrOfLevels={500}
+                    arcsLength={[0.3, 0.3, 0.4, 0.4]}
+                    colors={['#EC5222', '#FF7612', '#91FF04', '#11F343']}
+                    percent={587 / 800}
+                    value={587}
+                    arcPadding={0.02}
+                    textColor="#000"
+                    needleColor="#000"
+                    formatTextValue={() => `${587}`}
+        />
+            <div className="gauge-labels">
+        <span className="gauge-start">0</span>
+        <span className="gauge-end">800</span>
+      </div>
+        </div>
       <div className="indicators">
           <VerticalIndicatorsDashboard indicators={indicators} onClick={handleIndicatorClick}/>
       </div>

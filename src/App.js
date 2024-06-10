@@ -52,13 +52,39 @@ function App() {
     { label: 'Current OD with DPD<=30 days', value: 'No', percentage: 10, color: 'orange' },
     { label: 'DPD<=30 days', period: 'last 12 Months', value: 4, percentage: 40, color: 'red' },
   ];
+  const title = "Ask Customer:";
+  const content = [
+    "There are just 3 Sales transactions in the month of Apr'24 GSTIN, ask why?",
+    "Top Suppliers from Bank and GSTIN are not matching, ask why?",
+    "There was a delay of 55 days in GSTIN filing during Dec'23 ask why?",
+    // Add more items as needed
+  ];
 
   return (
     <div className="App">
       <div className="upper_score_card">
         <SuperScoreDashboard score={score} indicators={indicators} />
         <div className="quick_summary">
-          <p onClick={() => console.log("hello world")}>Quick Summary</p>
+          <div className="scrollable-div">
+            <h3>{title}</h3>
+            <div className="scrollable-content">
+              <ul>
+                {content.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="scrollable-div">
+            <h3>{title}</h3>
+            <div className="scrollable-content">
+              <ul>
+                {content.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <Bifurcation/>

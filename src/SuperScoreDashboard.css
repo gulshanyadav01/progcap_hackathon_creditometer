@@ -10,17 +10,28 @@
 
 .gauge-container {
   position: relative;
-  flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.gauge-value {
+  position: absolute;
+  top: 60%; /* Adjust this value to position the text correctly */
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
 }
 
 .gauge-labels {
   position: absolute;
-  width: 100%;
+  width: 72%;
   display: flex;
   justify-content: space-between;
-  top: 75%;
+  top: 80%;
+  font-weight: bold;
+  color:black;
 }
 
 .gauge-start, .gauge-end {
