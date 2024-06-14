@@ -7,11 +7,12 @@ const DeviationForm = () => {
 
   const handleCategoryChange = (index, event) => {
     const newCategories = [...categories];
+
     newCategories[index].category = event.target.value;
     setCategories(newCategories);
   };
 
-  
+
   const handleSubCategoryChange = (index, event) => {
     const newCategories = [...categories];
     newCategories[index].subCategory = event.target.value;
